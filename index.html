@@ -1537,55 +1537,65 @@ for (let i = 0; i < data.userDetails.connectedAccounts.length; i++) {
 
 for (let i = 0; i < data.userDetails.connectedAccounts.length; i++) {
 
-  if (data.userDetails.connectedAccounts[i].service === "GitHub") {
+  
 
-    user_name.innerHTML = `${name} <a href="${data.userDetails.connectedAccounts[i].profileUrl}"><i class="fa fa-github" aria-hidden="true"></i></a>`;
+  if (data.userDetails.connectedAccounts.length === 0) {
 
-    hasGitHub = true;
+  user_name.innerHTML = name;
 
-    break; // stop loop if found
+} else {
 
-  }
+  let accountLinks = "";
 
-}
+  let hasGitHub = false;
 
-// if GitHub account found, check for StackOverflow account
-
-if (hasGitHub) {
+  let hasLinkedIn = false;
 
   let hasStackOverflow = false;
 
-  let stackOverflowLink = '';
+  // loop through connected accounts and build links string
 
   for (let i = 0; i < data.userDetails.connectedAccounts.length; i++) {
 
-    if (
+    const account = data.userDetails.connectedAccounts[i];
 
-      data.userDetails.connectedAccounts[i].service === "StackOverflow"
+    if (account.service === "LinkedIn" && !hasLinkedIn) {
 
-    ) {
+      accountLinks += `<a href="${account.profileUrl}"><i class="fa fa-linkedin" aria-hidden="true"></i></a> `;
 
-      stackOverflowLink = `<a href="${data.userDetails.connectedAccounts[i].profileUrl}"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>`;
+      hasLinkedIn = true;
+
+    } else if (account.service === "GitHub" && !hasGitHub) {
+
+      accountLinks += `<a href="${account.profileUrl}"><i class="fa fa-github" aria-hidden="true"></i></a> `;
+
+      hasGitHub = true;
+
+    } else if (account.service === "StackOverflow" && !hasStackOverflow) {
+
+      accountLinks += `<a href="${account.profileUrl}"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a> `;
 
       hasStackOverflow = true;
-
-      break; // stop loop if found
 
     }
 
   }
 
-  
+  // display links string
 
-  // display GitHub and StackOverflow links if both exist
+  if (accountLinks !== "") {
 
-  if (hasStackOverflow) {
+    user_name.innerHTML = `${name} ${accountLinks}`;
 
-    user_name.innerHTML = `${name} <a href="${data.userDetails.connectedAccounts[0].profileUrl}"><i class="fa fa-github" aria-hidden="true"></i></a> ${stackOverflowLink}`;
+  } else {
 
-  } 
+    user_name.innerHTML = name;
+
+  }
 
 }
+
+  }
 
 });
 
