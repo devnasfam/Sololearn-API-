@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <meta name="keyword" content="Sololearn User-Profile Clone"/>
+
+        <meta name="description" content="Sololearn User-Profile Clone Made By Dev Nasfam"/>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="script.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/d3c9fc67a3.js" crossorigin="anonymous"></script>
+
+    <title>Sololearn User-Profile Clone</title>
+
+</head>
+
+  <body>
+
+    <main>
+
+    <div class="hider">
+
+    <div class="basic_info">
+
+    <header>
+
+    <div class="wrap">
+
+    <i class="fa fa-arrow-left back_to"></i>
+
+      <div id="header-name"></div>
+
+    </div>
+
+    <i class="fa fa-ellipsis-v"></i>
+
+    </header>
+
+    <center>
+
+    <div class="profile_info">
+
+    <div class="user_icon">
+
+    <div class="badge"></div>
+
+    </div>
+
+    <div class="user_name">Dev Nasfam</div>
+
+    <div class="user_country_and_level">
+
+    <span class="fi"></span>
+
+    <span class="user_country"></span>
+
+    <span class="dot">•</span>
+
+    <span class="user_level"></span>
+
+    </div>
+
+    <div class="user_bio">CLONE GURU😈</div>
+
+    <div class="user_follow">
+
+    <span class="user_followers">1.9K Followers</span>
+
+    <span class="dot">•</span>
+
+   <span class="user_following">120 Following</span>
+
+    </div>
+
+    <div class="follow_message">
+
+    <div class="follow">FOLLOW</div>
+
+    <div class="message">MESSAGE</div>
+
+    </div> 
+
+    </div>
+
+    </center>
+
+    </div>
+
+    
+
+    <div class="an">
+
+      <div class="recent_archievements">
+
+     <div class="c_title">RECENT ARCHIEVEMENTS</div>
+
+     <div class="archieve">
+
+        <div class="row1"></div>
+
+        <div class="row2"></div>
+
+     </div>
+
+     <div class="see_more">SEE MORE</div>
+
+       </div>
+
+    </div>
+
+    
+
+    <div class="courses_progress">
+
+     <div class="c_title">COURSES PROGRESS</div>
+
+     <div class="crss"></div>
+
+     <div class="show_all">SHOW ALL</div>
+
+      </div>
+
+    
+
+    <div class="certificates">
+
+     <div class="c_title cert">CERTIFICATES</div>
+
+     <div class="certified"></div>
+
+       </div>
+
+    
+
+    <div class="codes">
+
+     <div class="c_title">CODES</div>
+
+     <div class="user_codes"></div>
+
+     <div class="show_all">SHOW ALL</div>
+
+       </div>
+
+       <div class="follow_info"></div>
+
+       <div class="show_cert_c">
+
+        <div class="show_cert">
+
+        <div class="exit">Close 
+
+        <i class="fa fa-times"></i>
+
+        </div>
+
+        <div class="certy"></div>
+
+        </div>
+
+       </div>
+
+        </div>
+
+        
+
+        <div class="all">
+
+        <div class="head">
+
+        <i class="fa fa-arrow-left back"></i>
+
+        <div class="c_name"></div>
+
+        </div>
+
+        <div class="full_courses"></div>
+
+        <div class="full_codes"></div>
+
+        </div>
+
+        
+
+        <div class="welcome_cont">
+
+        <div class="w_head">
+
+        <div class="skip">SKIP >></div>
+
+        </div>
+
+        
+
+        <!--Tutorial cont-->
+
+        <div class="imgcont">
+
+    <div class="tthead"><div class="ttclose">CLOSE <i class="fa fa-times"></i></div></div>
+
+    <div class="tcont">
+
+   <div class="prev"><i class="fa fa-angle-left"></i></div> 
+
+   <img src="" id="carsoul">
+
+   <div class="next"><i class="fa fa-angle-right"></i></div> 
+
+   </div>
+
+   <div class="tnum"></div>
+
+    <div class="tmsg"></div>
+
+    </div>
+
+        
+
+        <div class="w_loader">
+
+        <div class="w_load">
+
+        <div class="loader"></div>
+
+        </div>
+
+        </div>
+
+        
+
+        <div class="solo_title">
+
+        <div class="solo_logo"></div>
+
+        <div class="solo_name">Sololearn</div>
+
+        </div>
+
+        
+
+        <div class="my_message">
+
+        <span class="my_msg">
+
+        Sololearn User Profile Clone <br />
+
+        made by 
+
+        <i class="mark">Dev Nasfam</i>
+
+        </span>
+
+        </div>
+
+        
+
+        <div class="id_input_cont">
+
+        <input type="text" placeholder="Enter Your Profile ID or URL" class="id_input" autofocus>
+
+        </div>
+
+        
+
+        <div class="err_msg">
+
+        </div>
+
+        
+
+        <div class="proceed_cont">
+
+        <button id="proceed_btn">PROCEED
+
+        </button>
+
+        </div>
+
+        
+
+        <div class="proceed_cont">
+
+        <a href="#" id="see_how">How can i find my id?</a>
+
+        </div>
+
+    
+
+        </div>
+
+        </main>
+
+        <script>
+
+let user_name = document.querySelector(".user_name"),
+
+user_country = document.querySelector(".user_country"),
+
+user_level = document.querySelector(".user_level"),
+
+user_bio = document.querySelector(".user_bio"),
+
+user_followers = 
+
+document.querySelector(".user_followers"),
+
+user_following = document.querySelector(".user_following"),
+
+user_icon = document.querySelector(".user_icon"),
+
+flag = document.querySelector(".fi"),
+
+dot = document.querySelector(".dot"),
+
+follow = document.querySelector(".follow"),
+
+badge = document.querySelector(".badge"),
+
+crss = document.querySelector(".crss"),
+
+certified = document.querySelector(".certified"),
+
+show_all = document.getElementsByClassName("show_all")[0],
+
+show_all2 = document.getElementsByClassName("show_all")[1],
+
+course_progress = document.querySelector(".courses_progress"),
+
+user_codes = document.querySelector(".user_codes"),
+
+codes = document.querySelector(".codes"),
+
+full_courses = document.querySelector(".full_courses"),
+
+full_codes = document.querySelector(".full_codes"),
+
+all = document.querySelector(".all"),
+
+hider = document.querySelector(".hider"),
+
+back = document.querySelector(".back"),
+
+archieve = document.querySelector(".archieve"),
+
+recent_ar = document.querySelector(".recent_archievements"),
+
+row1 = document.querySelector(".row1"),
+
+row2 = document.querySelector(".row2"),
+
+see_more = document.querySelector(".see_more"),
+
+follow_info = document.querySelector(".follow_info"),
+
+certy = document.querySelector(".certy"),
+
+show_cert_c = document.querySelector(".show_cert_c"),
+
+exit = document.querySelector(".exit"),
+
+basic_info = document.querySelector(".basic_info"),
+
+all_cert = document.querySelector(".certificates"),
+
+all_codes = document.querySelector(".codes"),
+
+proceed_btn = document.querySelector("#proceed_btn"),
+
+skip = document.querySelector(".skip"),
+
+wloader = document.querySelector(".w_loader"),
+
+wcont = document.querySelector(".welcome_cont"),
+
+idInput = document.querySelector(".id_input"),
+
+err_msg = document.querySelector(".err_msg"),
+
+back_to = document.querySelector(".back_to"),
+
+see_how = document.querySelector("#see_how"),
+
+next = document.querySelector(".next"),
+
+prev = document.querySelector(".prev"),
+
+img = document.querySelector("#carsoul"),
+
+num = document.querySelector(".tnum"),
+
+tmsg = document.querySelector(".tmsg"),
+
+imgcont = document.querySelector(".imgcont"),
+
+ttclose = document.querySelector(".ttclose");
+
+//Short Tutorial 
+
+see_how.onclick=()=>{
+
+    imgcont.style.display="block";
+
+}
+
+let imgList = 
+
+[{imgUrl:"https://i.postimg.cc/C5cj8h0s/Screenshot-2023-03-20-17-10-57-508-edit-com-miui-gallery.jpg",num:1,msgg:"Goto your profile and click on the three dots at the top right corner"},{imgUrl:"https://i.postimg.cc/VkCCfBJR/Screenshot-2023-03-20-17-11-44-970-edit-com-miui-gallery.jpg",num:2,msgg:"Click on share"},{imgUrl:"https://i.postimg.cc/fbMTGxmk/Screenshot-2023-03-20-17-12-39-072-edit-com-miui-gallery.jpg",num:3,msgg:"Share to sololearn or any other app"},{imgUrl:"https://i.postimg.cc/QMSxhHJm/Screenshot-2023-03-20-17-14-49-103-edit-com-miui-gallery.jpg",num:4,msgg:"Highlight the link and copy all, then come back to my code and paste it"}];
+
+let i = 0;
+
+img.classList.remove("show");
+
+  setTimeout(() => {
+
+    img.src=`${imgList[i].imgUrl}`;
+
+    num.innerHTML=imgList[i].num+"/"+imgList.length;
+
+    tmsg.innerHTML=imgList[i].msgg;
+
+    img.classList.add("show");
+
+  }, 500);
+
+    //Next
+
+    next.onclick=()=>{
+
+    i = (i+1)%imgList.length;
+
+    img.classList.remove("show");
+
+  setTimeout(() => {
+
+    img.src=imgList[i].imgUrl;
+
+    num.innerHTML=imgList[i].num+"/"+imgList.length;
+
+    tmsg.innerHTML=imgList[i].msgg;
+
+    img.classList.add("show");
+
+  }, 500);
+
+    }
+
+    //Prev
+
+    prev.onclick=()=>{
+
+    i = (i-1+imgList.length)%imgList.length;
+
+    img.classList.remove("show");
+
+  setTimeout(() => {
+
+    img.src=`${imgList[i].imgUrl}`;
+
+    num.innerHTML=imgList[i].num+"/"+imgList.length;
+
+    tmsg.innerHTML=imgList[i].msgg;
+
+    img.classList.add("show");
+
+  }, 500);
+
+    }
+
+    //Close
+
+    ttclose.onclick=()=>{
+
+     imgcont.style.display="none";
+
+    }
+
+//Hiding Loader when the page loads
+
+var idUrl = "";
+
+window.onload=()=>{
+
+    setTimeout(()=>{
+
+     wloader.style.display="none";
+
+    },2000);
+
+}
+
+//Back button that will take you back to
+
+// ID providing page
+
+back_to.addEventListener("click",()=>{
+
+wloader.style.display="none";
+
+wcont.style.display="block";
+
+hider.style.display="none";
+
+idInput.value="";
+
+err_msg.style.display="none";
+
+crss.innerHTML="";
+
+full_courses.innerHTML="";
+
+certified.innerHTML="";
+
+user_codes.innerHTML="";
+
+full_codes.innerHTML="";
+
+//see_more.innerHTML="";
+
+row1.innerHTML="";
+
+row2.innerHTML="";
+
+badge.innerHTML="";
+
+user_name.innerHTML="";
+
+user_level.innerHTML="";
+
+user_bio.innerHTML="";
+
+user_icon.innerHTML="";
+
+see_more.style.display="none";
+
+});
+
+//Skip
+
+skip.addEventListener("click",()=>{
+
+    err_msg.style.display="block";
+
+    err_msg.style.color="#8AC02C";
+
+       err_msg.innerHTML="Click on proceed to skip";
+
+       $(".err_msg")
+
+       .animate({"margin-left":"-5px"},50);
+
+        $(".err_msg")
+
+       .animate({"margin-left":"5px"},100);
+
+        $(".err_msg")
+
+        .animate({"margin-left":"-5px"},150);
+
+        $(".err_msg")
+
+        .animate({"margin-left":"0px"},200);
+
+       idInput.value="23179709";
+
+       idUrl= idInput.value;
+
+});
+
+//Proceed Button
+
+proceed_btn.addEventListener("click",()=>{
+
+   if(idInput.value=="" || idInput.value==null){
+
+       err_msg.style.display="block";
+
+       err_msg.style.color="red";
+
+       err_msg.innerHTML="Please fill in your ID or Skip";
+
+       $(".err_msg")
+
+       .animate({"margin-left":"-5px"},50);
+
+        $(".err_msg")
+
+       .animate({"margin-left":"5px"},100);
+
+        $(".err_msg")
+
+        .animate({"margin-left":"-5px"},150);
+
+        $(".err_msg")
+
+        .animate({"margin-left":"0px"},200);
+
+   }else if(!idInput.value.match(/\d/g)){
+
+       err_msg.style.display="block";
+
+       err_msg.style.color="red";
+
+       err_msg.innerHTML="Wrong ID Provided!<br>please skip if you can't find your id";
+
+       $(".err_msg")
+
+       .animate({"margin-left":"-5px"},50);
+
+        $(".err_msg")
+
+       .animate({"margin-left":"5px"},100);
+
+        $(".err_msg")
+
+        .animate({"margin-left":"-5px"},150);
+
+        $(".err_msg")
+
+        .animate({"margin-left":"0px"},200);
+
+   }else{
+
+       idUrl= idInput.value;
+
+       idUrl = idUrl.match(/\d/g);
+
+       idUrl = idUrl.join("");
+
+       wloader.style.display="flex";
+
+fetch(`https://aayanshsingh07.me/sololearn/user_info.php?id=${idUrl}`)
+
+.then(res => res.json())
+
+.then(data =>{
+
+//Hiding Loaders when the API is ready
+
+wloader.style.display="none";
+
+wcont.style.display="none";
+
+hider.style.display="block";
+
+//Shorthands for User Info
+
+    let {name,bio,level,xp,countryCode,avatarUrl} = data.userDetails;
+
+    let {courseName,courseIconURL,courseColor,progress} = data.coursesProgress;
+
+    
+
+    //Hiding Progresses if not available
+
+    if(data.coursesProgress.length==0){
+
+       courses_progress.style.display="none";
+
+    }else if(data.certificates.length==0){
+
+        all_cert.style.display="none";
+
+    }else if(data.userCodes.length==0 || data.userCodes==undefined || data.userCodes==null){
+
+        all_codes.style.display="none";
+
+    }
+
+    
+
+    //Cutting Web development Fundamentals
+
+    //Due to some overlap
+
+data.coursesProgress.forEach(web=>{
+
+    if(web.courseName=="Web Development Fundamentals"){
+
+        web.courseName="Web Fundamentals";
+
+    }
+
+});
+
+data.certificates.forEach(certificate=>{
+
+    if(certificate.name=="Web Development Fundamentals"){
+
+       certificate.name="Web Fundamentals";
+
+    }
+
+});
+
+//Courses progress Info short version
+
+    let shortCourses = data.coursesProgress.slice(0,3);
+
+    let isProgress;
+
+  shortCourses.forEach(course=>{
+
+   if(course.isCompleted==true){
+
+       isProgress = "Completed";
+
+   }else{
+
+       isProgress = "In Progress";
+
+   }
+
+     crss.innerHTML+=`
+
+     <li class="courseslist"><div class="coursesicon" style="background:url(${course.courseIconURL});background-size:cover;"></div><div class="coursesname">${course.courseName}<div class="inprogress">${isProgress}</div></div></li>
+
+     `;
+
+   });
+
+//Courses progress Info long version
+
+   let FullCourses = data.coursesProgress;
+
+  FullCourses.forEach(course=>{
+
+     full_courses.innerHTML+=`
+
+     <li class="full_c_list"><div class="f_courseicon" style="background:url(${course.courseIconURL});background-size:cover;"></div><div class="f_coursename">${course.courseName}<div class="progress_cont"><div class="progress_bar" style="width:${course.progress*100}%"></div></div></div></li>
+
+     `;
+
+   });
+
+   
+
+   //Show all button for showing all courses
+
+   show_all.addEventListener("click",()=>{
+
+     $(".hider").hide();
+
+     $(".all").fadeIn(0);
+
+     $(".full_courses").fadeIn(0);
+
+     $(".full_codes").hide();
+
+     $(".c_name").html("Courses");
+
+   });
+
+   
+
+   //Back Button for getting back to profile
+
+   back.addEventListener("click",()=>{
+
+     $(".hider").fadeIn(0);
+
+     $(".all").hide();
+
+     $(".full_courses").hide();
+
+     $(".full_codes").hide();
+
+   });
+
+   
+
+   //Show all button for showing all codes
+
+   show_all2.addEventListener("click",()=>{
+
+     $(".hider").hide();
+
+     $(".all").fadeIn(0);
+
+     $(".full_courses").hide();
+
+     $(".full_codes").show();
+
+     $(".c_name").html("Codes");
+
+   });
+
+   
+
+   //Hiding Show all button
+
+   // if course progress is less than 3
+
+   if(data.coursesProgress.length<=3){
+
+       show_all.style.display="none";
+
+    course_progress.style.paddingBottom="10px";
+
+   }else if(data.coursesProgress.length<1){
+
+       course_progress.style.display="none";
+
+   }else if(data.coursesProgress.length>3){
+
+       show_all.style.display="block";
+
+       show_all.style.display="flex";
+
+    course_progress.style.paddingBottom="40px";
+
+   }
+
+   if(data.userCodes.length<=3 && data.userCodes.length>0){
+
+       show_all2.style.display="none";
+
+      codes.style.paddingBottom="0px";
+
+   }else if(data.userCodes.length<1){
+
+    codes.style.display="none";
+
+   }else if(data.userCodes.length>3){
+
+       show_all2.style.display="block";
+
+       show_all2.style.display="flex";
+
+   }
+
+   
+
+    //Certificates
+
+    let certificatesCount = 0;
+
+ data.certificates.forEach(certificate=>{
+
+    certified.innerHTML += `
+
+     <div class="certificate">
+
+        <div class="certificate_body" style="background:${certificate.courseColor};">
+
+          <div class="certificate_icon" style="background:url(${certificate.iconURL});background-size:cover;"></div>
+
+        </div>
+
+        <div class="certificate_name">${certificate.name}</div>
+
+      </div>
+
+    `;
+
+    certificatesCount++;
+
+});
+
+//If user have only one certificate
+
+if (certificatesCount == 1) {
+
+  certified.style.justifyContent = "center";
+
+}
+
+//Pop up certificate 
+
+document.querySelectorAll(".certificate_body").forEach((certificateBody, i) => {
+
+  certificateBody.addEventListener("click", () => {
+
+    show_cert_c.style.display="flex";
+
+    certy.style.background=`url(${data.certificates[i].imageUrl})`;
+
+    certy.style.backgroundSize="cover";
+
+  });
+
+});
+
+//Exit pop up
+
+exit.addEventListener("click", () => {
+
+    show_cert_c.style.display="none";
+
+});
+
+//Time Passed
+
+function timePassed(timer) {
+
+  const now = new Date();
+
+  const timeDiffSeconds = Math.floor((now - new Date(timer)) / 1000);
+
+  const timeIntervals = [
+
+    { interval: 31536000, label: "year" },
+
+    { interval: 2592000, label: "month" },
+
+    { interval: 86400, label: "day" },
+
+    { interval: 3600, label: "hour" },
+
+    { interval: 60, label: "minute" },
+
+    { interval: 1, label: "second" },
+
+  ];
+
+  for (let i = 0; i < timeIntervals.length; i++) {
+
+    const { interval, label } = timeIntervals[i];
+
+    const timeDiff = Math.floor((timeDiffSeconds + now.getTimezoneOffset() * 60) / interval);
+
+    if (timeDiff >= 1) {
+
+      return `${timeDiff} ${label}${timeDiff === 1 ? "" : "s"} ago`;
+
+    }
+
+  }
+
+  return `${timeDiffSeconds} second${timeDiffSeconds === 1 ? "" : "s"} ago`;
+
+}
+
+//User Codes Short
+
+ let shortCodes = data.userCodes.slice(0,3);
+
+   shortCodes.forEach(code=>{
+
+     user_codes.innerHTML+=`
+
+     <li class="courseslist"><div class="codeicon" style="background-size:cover;">${code.language}</div><div class="codename">${code.name}<div class="timeago">${timePassed(code.modifiedDate)}</div></div></li>
+
+     `;
+
+   });
+
+   
+
+   //User Full Codes
+
+   let FullCodes = data.userCodes;
+
+   FullCodes.forEach(code=>{
+
+     full_codes.innerHTML+=`
+
+     <li class="codeslist"><div class="codeicon" style="background-size:cover;">${code.language}</div><div class="codename">${code.name}<div class="timeago">${timePassed(code.modifiedDate)}</div></div></li>
+
+     `;
+
+   });
+
+   
+
+   //Users archievements badges
+
+   try {
+
+  if (data.userBadges.badges != null && data.userBadges.badges != undefined) {
+
+    if (data.userBadges.badges.length <= 4) {
+
+      row2.style.display = "none";
+
+      row1.style.display = "flex";
+
+      recent_ar.style.paddingBottom = "10px";
+
+    } else if (data.userBadges.badges.length <= 0) {
+
+      row2.style.display = "none";
+
+      row1.style.display = "none";
+
+      see_more.innerHTML = "NO ARCHIEVEMENTS";
+
+    } else if (data.userBadges.badges.length > 4) {
+
+      see_more.style.display = "flex";
+
+      row1.style.display = "flex";
+
+      row2.style.display = "flex";
+
+    } else if (data.userBadges.badges.length == 5 || data.userBadges.badges.length== 6 || data.userBadges.badges.length == 7) {
+
+      row2.style.display = "none";
+
+      row1.style.display = "flex";
+
+      see_more.style.display = "none";
+
+    }
+
+  
+
+  //First row of archievements badges
+
+    let first_row = data.userBadges.badges.slice(0, 4);
+
+    first_row.forEach((badge) => {
+
+      row1.innerHTML += `
+
+        <div class="a_badge" style="background:${badge.color} url(${badge.iconURL}); background-size:cover;"></div>
+
+      `;
+
+    });
+
+  
+
+  //First row of archievements badges
+
+    let second_row = data.userBadges.badges.slice(4, 8);
+
+    second_row.forEach((badge2) => {
+
+      row2.innerHTML += `
+
+        <div class="a_badge" style="background:${badge2.color} url(${badge2.iconURL}); background-size:cover;"></div>
+
+      `;
+
+    });
+
+  
+
+  //Showing see more if number
+
+  //of badges are not 4, 8 or more
+
+    if (data.userBadges.badges.length == 5 || data.userBadges.badges.length== 6 || data.userBadges.badges.length == 7) {
+
+      row2.style.display = "none";
+
+      row1.style.display = "flex";
+
+      see_more.style.display = "flex";
+
+    }
+
+  }
+
+  //Catching error for users with no archievements badge 
+
+}catch(err){
+
+     see_more.innerHTML = "NO ARCHIEVEMENTS";
+
+}
+
+ 
+
+    //Fetching User Level badge
+
+    let user_badge = (data.userDetails.badges)?data.userDetails.badges[0].name:badge.style.display="none";
+
+    switch (user_badge){
+
+        case 'bronze': badge.style.background="url(https://dl.dropbox.com/s/efoxwjw653ylmgj/badge_bronze_profile.png?dl=0)";
+
+         badge.style.backgroundSize="cover";
+
+         break;
+
+         case 'silver': badge.style.background="url(https://dl.dropbox.com/s/azuvry03mne0nn9/badge_silver_profile.png?dl=0)";
+
+         badge.style.backgroundSize="cover";
+
+         break;
+
+         case 'gold': badge.style.background="url(https://dl.dropbox.com/s/rh204vtjvk089na/badge_gold_profile.png?dl=0)";
+
+         badge.style.backgroundSize="cover";
+
+         break;
+
+         case 'platinum': badge.style.background="url(https://dl.dropbox.com/s/22n72u80gcs3kvz/badge_platinum_profile.png?dl=0)";
+
+         badge.style.backgroundSize="cover";
+
+         break;
+
+         case 'mod':
+
+         badge.innerHTML='MENTOR <i class="fa fa-star"></i>';
+
+         badge.style.width="110px";
+
+         badge.style.height="auto";
+
+         badge.style.bottom="-15%";
+
+         badge.style.left="50%";
+
+         badge.style.borderRadius="50px";
+
+         badge.style.color="#000";
+
+         badge.style.padding="2px"; badge.style.transform="translate(-50%,-50%)"; badge.style.background="lightgrey";
+
+         
+
+         basic_info.style.background="radial-gradient(ellipse at center,#344B55,#242f35,#20292e)";
+
+         
+
+         break;
+
+         case 'platinum_mod':
+
+         badge.innerHTML='PLAT <i class="fa fa-star"></i>';
+
+         badge.style.width="105px";
+
+         badge.style.height="auto";
+
+         badge.style.bottom="-15%";
+
+         badge.style.left="50%";
+
+         badge.style.borderRadius="50px";
+
+         badge.style.color="#000";
+
+         badge.style.padding="2px"; badge.style.transform="translate(-50%,-50%)"; badge.style.background="#f19c7f"; basic_info.style.background="radial-gradient(ellipse at center,#344B55,#242f35,#20292e)";
+
+         break;
+
+         default: badge.style.display="none";
+
+    }
+
+    
+
+    //Adding user Data to HTML
+
+    user_name.innerHTML=name;
+
+    user_bio.innerHTML=bio;
+
+    user_level.innerHTML=`Lvl ${level}`;
+
+    user_icon.style.background=`black url(${avatarUrl})`;
+
+user_icon.style.backgroundSize="cover";
+
+     if(avatarUrl==null || avatarUrl==undefined){
+
+         user_icon.innerHTML=name.slice(0,1);
+
+       user_icon.style.background="orange";
+
+     }
+
+     
+
+     //Detecting if country Name is null
+
+     if(countryCode){
+
+    user_country.innerHTML=countryList[countryCode.toUpperCase()];
+
+    }else{
+
+        user_country.style.display="none";
+
+        dot.style.display="none";
+
+        user_level.style.marginLeft="-20px";
+
+    }
+
+    
+
+     if(countryCode){ flag.classList.add("fi-"+countryCode.toLowerCase());
+
+     }else{
+
+        user_country.style.display="none";
+
+        dot.style.display="none";
+
+        user_level.style.marginLeft="-20px";
+
+     }
+
+    
+
+    //Followers/Followings variables
+
+let follower = data.userDetails.followers;
+
+let followers = follower.toString();
+
+let flwrs;
+
+let followings = data.userDetails.following;
+
+let following = followings.toString();
+
+let flwing;
+
+   //Converting Number of followers to K or M
+
+if(followers>999 && followers <=9999){
+
+if(followers.slice(1,2)==0){
+
+flwrs  = followers.slice(0,1)+"K";
+
+}else{
+
+flwrs  = followers.slice(0,1)+"."+followers.slice(1,2)+"K";
+
+}
+
+}else if(followers>9999 && followers <=99999){
+
+if(followers.slice(2,3)==0){
+
+        flwrs  = followers.slice(0,2)+"K";
+
+    }else{
+
+        flwrs  = followers.slice(0,2)+"."+followers.slice(2,3)+"K";
+
+    }
+
+}else if(followers > 99999 && followers <=999999){
+
+    if(followers.slice(3,4)==0){
+
+        flwrs  = followers.slice(0,3)+"K";
+
+    }else{
+
+        flwrs  = followers.slice(0,3)+"."+followers.slice(3,4)+"K";
+
+    }
+
+}else if(followers > 999999 && followers < 9999999){
+
+    if(followers.slice(1,2)==0){
+
+        flwrs  = followers.slice(0,1)+"M";
+
+    }else{
+
+        flwrs  = followers.slice(0,1)+"."+followers.slice(1,2)+"M";
+
+    }
+
+}else if(followers > 9999999 && followers < 99999999){
+
+    if(followers.slice(2,3)==0){
+
+        flwrs  = followers.slice(0,2)+"M";
+
+    }else{
+
+        flwrs  = followers.slice(0,2)+"."+followers.slice(2,3)+"M";
+
+    }
+
+}else{
+
+    flwrs  = followers;
+
+}
+
+//Converting Number of following to K or M
+
+if(following>999 && following <=9999){
+
+if(following.slice(1,2)==0){
+
+flwing  = following.slice(0,1)+"K";
+
+}else{
+
+flwing  = following.slice(0,1)+"."+following.slice(1,2)+"K";
+
+}
+
+}else if(following>9999 && following <=99999){
+
+if(following.slice(2,3)==0){
+
+        flwing  = following.slice(0,2)+"K";
+
+    }else{
+
+        flwing  = following.slice(0,2)+"."+following.slice(2,3)+"K";
+
+    }
+
+}else if(following > 99999 && following <=999999){
+
+    if(following.slice(3,4)==0){
+
+        flwing  = following.slice(0,3)+"K";
+
+    }else{
+
+        flwing = following.slice(0,3)+"."+following.slice(3,4)+"K";
+
+    }
+
+}else if(following > 999999 && following < 9999999){
+
+    if(following.slice(1,2)==0){
+
+        flwing  = following.slice(0,1)+"M";
+
+    }else{
+
+        flwing  = following.slice(0,1)+"."+following.slice(1,2)+"M";
+
+    }
+
+}else if(following > 9999999 && following < 99999999){
+
+    if(following.slice(2,3)==0){
+
+        flwing  = following.slice(0,2)+"M";
+
+    }else{
+
+        flwing  = following.slice(0,2)+"."+following.slice(2,3)+"M";
+
+    }
+
+}else{
+
+    flwing  = following;
+
+}
+
+//Adding followers/following info to HTML
+
+user_followers.innerHTML=`<span class="fb">${flwrs}</span> Followers`;
+
+if(Number(flwrs<2)){
+
+    user_followers.innerHTML=`<span class="fb">${flwrs}</span> Follower`;
+
+}
+
+user_following.innerHTML=`<span class="fb">${flwing}</span> Following`;
+
+//Follow Button Click and Unclik to follow/unfollow
+
+let status = true;
+
+follow.onclick = () => {
+
+  if (status) {
+
+    follow.style.background = "transparent";
+
+    follow.style.padding = "2px";
+
+    follow.style.border = "2px solid #fff";
+
+    follow.innerHTML = "FOLLOWING";
+
+    status = false;
+
+    if(flwrs<1000){
+
+    flwrs = parseInt(flwrs) + 1;
+
+    }
+
+    user_followers.innerHTML = `<span class="fb">${flwrs}</span> Followers`;
+
+    setTimeout(()=>{
+
+        follow_info.style.display="none";
+
+    follow_info.style.display="flex";
+
+    follow_info.innerHTML=`You started following ${name}`;
+
+    },300);
+
+    setTimeout(()=>{
+
+        follow_info.style.display="none";
+
+    },2300);
+
+  } else {
+
+    follow.style.background = "#8AC02C";
+
+    follow.style.padding = "4px";
+
+    follow.style.border = "none";
+
+    follow.innerHTML = "FOLLOW";
+
+    status = true;
+
+    if(flwrs<1000){
+
+    flwrs = parseInt(flwrs) - 1;
+
+    }
+
+    user_followers.innerHTML = `<span class="fb">${flwrs}</span> Followers`;
+
+    setTimeout(()=>{
+
+    follow_info.style.display="flex";
+
+    follow_info.innerHTML=`You unfollowed ${name}`;
+
+    },300);
+
+    setTimeout(()=>{
+
+        follow_info.style.display="none";
+
+    },2300);
+
+  }
+
+}
+
+    $("#header-name").html(name);
+
+  let headerHeight = $("header").height()+17;
+
+  let main = $("main");
+
+  let mainHeight = main.height();
+
+  let debounceTimer;
+
+  function debounce(fn, delay) {
+
+    return function () {
+
+      clearTimeout(debounceTimer);
+
+      debounceTimer = setTimeout(fn, delay);
+
+    };
+
+  }
+
+  main.on("scroll", debounce(() => {
+
+  let scroll = main.scrollTop();
+
+  if (scroll > mainHeight / 2 - headerHeight) {
+
+   $("header").css({ "position": "fixed", "top": "0", "z-index": "1000" });
+
+    main.css({ "padding-top": `${headerHeight}px` });
+
+    $("header").addClass("header-fixed");
+
+  } else {
+
+    $("header").css({ "position": "static" });
+
+    main.css({ "padding-top": "0" });
+
+    $("header").removeClass("header-fixed");
+
+  }
+
+}, 20));
+
+//Adding User Connected Accounts
+
+var {service,profileUrl} = data.userDetails.connectedAccounts;
+
+if (data.userDetails.connectedAccounts.length === 0) {
+
+  user_name.innerHTML = name;
+
+}
+
+let hasGitHub = false;
+
+let hasLinkedIn = false;
+
+// check for LinkedIn account
+
+for (let i = 0; i < data.userDetails.connectedAccounts.length; i++) {
+
+  if (data.userDetails.connectedAccounts[i].service === "LinkedIn") {
+
+    user_name.innerHTML = `${name} <a href="${data.userDetails.connectedAccounts[i].profileUrl}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>`;
+
+    hasLinkedIn = true;
+
+    break; // stop loop if found
+
+  }
+
+}
+
+// check for GitHub account
+
+for (let i = 0; i < data.userDetails.connectedAccounts.length; i++) {
+
+  if (data.userDetails.connectedAccounts[i].service === "GitHub") {
+
+    user_name.innerHTML = `${name} <a href="${data.userDetails.connectedAccounts[i].profileUrl}"><i class="fa fa-github" aria-hidden="true"></i></a>`;
+
+    hasGitHub = true;
+
+    break; // stop loop if found
+
+  }
+
+}
+
+// if GitHub account found, check for StackOverflow account
+
+if (hasGitHub) {
+
+  let hasStackOverflow = false;
+
+  let stackOverflowLink = '';
+
+  for (let i = 0; i < data.userDetails.connectedAccounts.length; i++) {
+
+    if (
+
+      data.userDetails.connectedAccounts[i].service === "StackOverflow"
+
+    ) {
+
+      stackOverflowLink = `<a href="${data.userDetails.connectedAccounts[i].profileUrl}"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>`;
+
+      hasStackOverflow = true;
+
+      break; // stop loop if found
+
+    }
+
+  }
+
+  
+
+  // display GitHub and StackOverflow links if both exist
+
+  if (hasStackOverflow) {
+
+    user_name.innerHTML = `${name} <a href="${data.userDetails.connectedAccounts[0].profileUrl}"><i class="fa fa-github" aria-hidden="true"></i></a> ${stackOverflowLink}`;
+
+  } 
+
+}
+
+});
+
+   }
+
+});
+
+        </script>
+
+    </body>
+
+</html>
+
