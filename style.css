@@ -609,12 +609,17 @@ header i.fa:active{
     border-radius:50%;
 
     margin-right:10px;
+    
+    flex-shrink: 0;
 
 }
 
 .coursesname{
 
     font-size:16px;
+    overflow:hidden;
+
+    text-overflow: ellipsis;
 
 }
 
@@ -906,11 +911,8 @@ header i.fa:active{
 
     font-weight:bold;
 
-    white-space: nowrap;
 
-    overflow: hidden;
 
-    text-overflow: ellipsis;
 
     flex-shrink: 0;
 
@@ -926,9 +928,6 @@ header i.fa:active{
 
     font-weight:bold;
 
-    flex:1;
-
-    white-space: nowrap; 
 
     overflow: hidden;
 
